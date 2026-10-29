@@ -1,0 +1,36 @@
+##Ainur1.0
+
+TotalNumberOfSites=4;
+NumberOfTerms=4;
+
+gt0:GeometryKind="chain";
+gt0:GeometryOptions="ConstantValues";
+gt0:dir0:Connectors=[-1.0];
+
+gt1:GeometryKind="chain";
+gt1:GeometryOptions="ConstantValues";
+gt1:dir0:Connectors=[0.0];
+
+gt2:GeometryKind="chain";
+gt2:GeometryOptions="ConstantValues";
+gt2:dir0:Connectors=[0.0];
+
+gt3:GeometryKind="chain";
+gt3:GeometryOptions="ConstantValues";
+gt3:dir0:Connectors=[0.35];
+
+vector hubbardFU=[10,10,10,10];
+vector potentialFV=[0,0,0,0,0,0,0,0];
+
+integer NumberPhonons=1;
+vector lambdaFP=[0,0,0,0];
+vector potentialPV=[3,3,3,3];
+
+Model="HubbardHolsteinSSH";
+SolverOptions="none";
+Version="5.25";
+OutputFile="data4710_b1g";
+InfiniteLoopKeptStates=100;
+FiniteLoops=[[1,200,0],[-2,200,0],[2,200,0]];
+TargetElectronsUp=1;
+TargetElectronsDown=1;
